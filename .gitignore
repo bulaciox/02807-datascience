@@ -1,3 +1,7 @@
+data/data_output/
+data/data_output_extensive/
+data/*.csv
+.venv/
 .venv/
 .DS_Store
 .ipynb_checkpoints/

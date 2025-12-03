@@ -1,0 +1,54 @@
+league: min=ENG-Premier League, max=ITA-Serie A
+season: min=2324, max=2324
+team: min=Alavés, max=Wolves
+player: min=Aaron Ramsey, max=İlkay Gündoğan
+nation: min=ALB, max=ZIM
+pos: min=FW, max=MF,FW
+age: min=16, max=37
+MP Playing Time: min=7, max=38
+Min Playing Time: min=452, max=3325
+90s Playing Time: min=5.0, max=36.9
+npxG Per 90 Minutes: min=0.0, max=1.08
+G-PK Per 90 Minutes: min=0.0, max=1.01
+xAG Per 90 Minutes: min=0.0, max=0.85
+xG+xAG Per 90 Minutes: min=0.02, max=1.29
+Sh/90 Standard: min=0.04, max=5.31
+SoT% Standard: min=0.0, max=100.0
+Dist Standard: min=9.0, max=33.8
+G/Sh Standard: min=0.0, max=1.0
+KP: min=0.0, max=4.338235294117647
+PrgP: min=0.19607843137254904, max=12.523961661341852
+PPA: min=0.0, max=4.11764705882353
+CrsPA: min=0.0, max=1.1702127659574468
+1/3: min=0.0, max=13.85593220338983
+Cmp% Total: min=50.0, max=94.0
+Cmp% Long: min=17.6, max=100.0
+Att Long: min=0.10638297872340426, max=18.559322033898304
+TB Pass Types: min=0.0, max=1.1370262390670556
+Sw Pass Types: min=0.0, max=2.4507042253521125
+Crs Pass Types: min=0.0, max=10.0
+PrgC Carries: min=0.0, max=12.31638418079096
+CPA Carries: min=0.0, max=8.305084745762713
+Succ Take-Ons: min=0.0, max=4.915254237288136
+Succ% Take-Ons: min=0.0, max=100.0
+Dis Carries: min=0.078125, max=4.015151515151516
+Mis Carries: min=0.2, max=6.0
+PrgR Receiving: min=0.16853932584269662, max=16.93548387096774
+TklW Tackles: min=0.0, max=3.3962264150943398
+Att 3rd Tackles: min=0.0, max=1.3725490196078431
+Mid 3rd Tackles: min=0.0, max=2.7586206896551726
+Def 3rd Tackles: min=0.0, max=2.6666666666666665
+Int: min=0.0, max=2.7906976744186047
+Sh Blocks: min=0.0, max=1.0169491525423728
+Recov Performance: min=0.6382978723404256, max=9.866666666666667
+Won Aerial Duels: min=0.0, max=10.074626865671641
+Won% Aerial Duels: min=0.0, max=82.4
+Fls Performance: min=0.17543859649122806, max=4.516129032258064
+Fld Performance: min=0.0, max=5.147058823529412
+Att Pen Touches: min=0.0, max=12.768361581920905
+Att 3rd Touches: min=3.647798742138365, max=53.23529411764706
+Mid 3rd Touches: min=7.2388059701492535, max=73.19488817891374
+Def 3rd Touches: min=0.9574468085106382, max=25.82191780821918
+Def Pen Touches: min=0.0, max=5.830721003134797
+Live Touches: min=18.860294117647058, max=122.33128834355827
+Cmp Total: min=5.6321839080459775, max=103.22085889570552
