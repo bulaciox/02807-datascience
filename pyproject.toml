@@ -22,8 +22,11 @@ dependencies = [
     "pyparsing==3.2.5",
     "python-dateutil==2.9.0.post0",
     "python-louvain>=0.16",
+    "requests>=2.32.5",
     "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
     "six==1.17.0",
+    "soccerdata>=1.8.2",
     "uv==0.8.15",
     "win32-setctime==1.2.0",
 ]
