@@ -16,12 +16,14 @@ dependencies = [
     { name = "kiwisolver" },
     { name = "loguru" },
     { name = "matplotlib" },
+    { name = "networkx" },
     { name = "numpy" },
     { name = "packaging" },
     { name = "pandas" },
     { name = "pillow" },
     { name = "pyparsing" },
     { name = "python-dateutil" },
+    { name = "python-louvain" },
     { name = "scikit-learn" },
     { name = "six" },
     { name = "uv" },
@@ -39,12 +41,14 @@ requires-dist = [
     { name = "kiwisolver", specifier = "==1.4.9" },
     { name = "loguru", specifier = "==0.7.3" },
     { name = "matplotlib", specifier = "==3.10.7" },
+    { name = "networkx", specifier = ">=3.6" },
     { name = "numpy", specifier = "==2.3.4" },
     { name = "packaging", specifier = "==25.0" },
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "pillow", specifier = "==12.0.0" },
     { name = "pyparsing", specifier = "==3.2.5" },
     { name = "python-dateutil", specifier = "==2.9.0.post0" },
+    { name = "python-louvain", specifier = ">=0.16" },
     { name = "scikit-learn", specifier = ">=1.7.2" },
     { name = "six", specifier = "==1.17.0" },
     { name = "uv", specifier = "==0.8.15" },
@@ -579,6 +583,15 @@ wheels = [
 ]
 
 [[package]]
+name = "networkx"
+version = "3.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e8/fc/7b6fd4d22c8c4dc5704430140d8b3f520531d4fe7328b8f8d03f5a7950e8/networkx-3.6.tar.gz", hash = "sha256:285276002ad1f7f7da0f7b42f004bcba70d381e936559166363707fdad3d72ad", size = 2511464, upload-time = "2025-11-24T03:03:47.158Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/07/c7/d64168da60332c17d24c0d2f08bdf3987e8d1ae9d84b5bbd0eec2eb26a55/networkx-3.6-py3-none-any.whl", hash = "sha256:cdb395b105806062473d3be36458d8f1459a4e4b98e236a66c3a48996e07684f", size = 2063713, upload-time = "2025-11-24T03:03:45.21Z" },
+]
+
+[[package]]
 name = "numpy"
 version = "2.3.4"
 source = { registry = "https://pypi.org/simple" }
@@ -890,6 +903,16 @@ sdist = { url = "https://files.pythonhosted.org/packages/66/c0/0c8b6ad9f17a802ee
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl", hash = "sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427", size = 229892, upload-time = "2024-03-01T18:36:18.57Z" },
 ]
+
+[[package]]
+name = "python-louvain"
+version = "0.16"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "networkx" },
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/7c/0d/8787b021d52eb8764c0bb18ab95f720cf554902044c6a5cb1865daf45763/python-louvain-0.16.tar.gz", hash = "sha256:b7ba2df5002fd28d3ee789a49532baad11fe648e4f2117cf0798e7520a1da56b", size = 204641, upload-time = "2022-01-29T15:53:03.532Z" }
 
 [[package]]
 name = "pytz"
