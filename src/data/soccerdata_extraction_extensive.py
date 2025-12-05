@@ -12,7 +12,7 @@ import logging
 # end_season = int(sys.argv[3]) if len(sys.argv) > 3 else 24
 
 # Get Current Working Directory
-output_folder = os.getcwd() + '/data_output'
+output_folder = os.getcwd() + '/data/raw'
 start_season = 23
 end_season = 24
 # Suppress all warnings
