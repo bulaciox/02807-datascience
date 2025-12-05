@@ -91,11 +91,11 @@ This notebook digs deeper into the identified clusters to find statistical rules
 *   **Goal:** To identify which specific attributes within a cluster are strongest indicators of goal-scoring success.
 
 
-### 3.4 DBSCAN Clustering (Alternative Approach)
+### 3.4 Clustering (Alternative Approach) - PCA, DBSCAN, GMM
 
-**Notebook:** [`./notebooks/Clustering/dbscan_test.ipynb`](notebooks/Clustering/dbscan_test.ipynb)
+**Notebook:** [`.notebooks/data-science/clustering.ipynb`](notebooks/data-science/clustering.ipynb)
 
 A notebook identifying player clusters based on density rather than graph connectivity.
-*   **Methodology:** Uses **DBSCAN** (Density-Based Spatial Clustering of Applications with Noise).
+*   **Methodology:** Uses **DBSCAN** (Density-Based Spatial Clustering of Applications with Noise) and **GMM** (Probabilistic Clustering Approach).
 *   **Features:** Includes dimensionality reduction (PCA) for visualizing the resulting clusters.
 *   **Comparison:** serves as a validation or alternative perspective to the primary graph-based clustering.
