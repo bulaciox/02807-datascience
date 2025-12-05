@@ -95,7 +95,7 @@ This notebook digs deeper into the identified clusters to find statistical rules
 
 **Notebook:** [`./notebooks/Clustering/dbscan_test.ipynb`](notebooks/Clustering/dbscan_test.ipynb)
 
-An experimental notebook identifying player clusters based on density rather than graph connectivity.
+A notebook identifying player clusters based on density rather than graph connectivity.
 *   **Methodology:** Uses **DBSCAN** (Density-Based Spatial Clustering of Applications with Noise).
 *   **Features:** Includes dimensionality reduction (PCA) for visualizing the resulting clusters.
 *   **Comparison:** serves as a validation or alternative perspective to the primary graph-based clustering.
