@@ -69,7 +69,17 @@ These notebooks implement the core clustering methodology using graph theory.
     4.  **Community Detection:** Uses the graph structure to identify clusters (communities) of similar players.
 *   **Key Output:** Generates `../../data/processed/players_w_clusters.csv`, assigning a cluster label to each player. This file is used by downstream analysis notebooks.
 
-### 3.2 Frequent Pattern Analysis (Apriori)
+
+### 3.2 Player Recommendation System (LSH)
+
+**Notebook:** [`./notebooks/data-science/lsh.ipynb`](notebooks/data-science/lsh.ipynb)
+
+This notebook implements a scalable similarity search engine.
+*   **Technique:** **Locality Sensitive Hashing (LSH)** using P-Stable Distributions for Euclidean Distance.
+*   **Purpose:** Efficiently finds the "Nearest Neighbors" for a given player without comparing them to every other player in the dataset.
+*   **Application:** Can be used to find "comparable" players for scouting or replacement purposes (e.g., "Who is the most similar player to Bukayo Saka?").
+
+### 3.3 Frequent Pattern Analysis (Apriori)
 
 **Notebook:** [`./notebooks/data-science/Frequency_analysis.ipynb`](notebooks/data-science/Frequency_analysis.ipynb)
 
@@ -80,14 +90,6 @@ This notebook digs deeper into the identified clusters to find statistical rules
     *   **Association Rule Mining:** Uses the **Apriori Algorithm** to find frequent itemsets and rules (e.g., "High xG + High Shot Volume -> High Goals").
 *   **Goal:** To identify which specific attributes within a cluster are strongest indicators of goal-scoring success.
 
-### 3.3 Player Recommendation System (LSH)
-
-**Notebook:** [`./notebooks/data-science/lsh.ipynb`](notebooks/data-science/lsh.ipynb)
-
-This notebook implements a scalable similarity search engine.
-*   **Technique:** **Locality Sensitive Hashing (LSH)** using P-Stable Distributions for Euclidean Distance.
-*   **Purpose:** Efficiently finds the "Nearest Neighbors" for a given player without comparing them to every other player in the dataset.
-*   **Application:** Can be used to find "comparable" players for scouting or replacement purposes (e.g., "Who is the most similar player to Bukayo Saka?").
 
 ### 3.4 DBSCAN Clustering (Alternative Approach)
 
