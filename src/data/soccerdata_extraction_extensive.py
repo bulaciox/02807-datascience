@@ -5,12 +5,16 @@ import soccerdata as sd
 import pandas as pd
 import warnings
 import logging
-import sys
+# import sys
 
-output_folder = sys.argv[1] if len(sys.argv) >= 2 else '/zhome/f6/9/213532/CompToolsDSc_Project/data_output'
-star_season = int(sys.argv[2]) if len(sys.argv) > 2 else 20
-end_season = int(sys.argv[3]) if len(sys.argv) > 3 else 25
+# output_folder = sys.argv[1] if len(sys.argv) >= 2 else os.getcwd() + '/data_output_23_24_extensive'
+# star_season = int(sys.argv[2]) if len(sys.argv) > 2 else 23
+# end_season = int(sys.argv[3]) if len(sys.argv) > 3 else 24
 
+# Get Current Working Directory
+output_folder = os.getcwd() + '/data/raw'
+start_season = 23
+end_season = 24
 # Suppress all warnings
 warnings.filterwarnings("ignore")
 
@@ -18,7 +22,7 @@ warnings.filterwarnings("ignore")
 logging.getLogger('soccerdata').setLevel(logging.ERROR)
 
 # Generate season list
-season_list = [str(i)+'-'+str(i+1) for i in range(star_season, end_season)]
+season_list = [str(i)+'-'+str(i+1) for i in range(start_season, end_season)]
 # Define the list of statistics to fetch
 stat_list = ['standard', 'shooting', 'passing', 'passing_types', 'goal_shot_creation', 'defense', 'possession', 'playing_time', 'misc', 'keeper', 'keeper_adv']
 
@@ -103,7 +107,12 @@ for season in season_list:
         player_season_stats.reset_index(inplace=True)
         
         # Save to CSV
-        file_name = f'/zhome/f6/9/213532/CompToolsDSc_Project/{output_folder}/player_season_stats_{season}.csv'
+        file_name = f'{output_folder}/player_season_stats_{season}.csv'
+        
+        # Create output directory if it doesn't exist
+        if not os.path.exists(output_folder):
+            os.makedirs(output_folder)
+            
         # Check if file exists and warn
         if os.path.exists(file_name):
             print(f"Warning: File {file_name} already exists and will be overwritten.")
@@ -117,7 +126,7 @@ for season in season_list:
         if keeper_combined is not None:
             keeper_combined.reset_index(inplace=True)
             # Save to CSV
-            keeper_file_name = f'/zhome/f6/9/213532/CompToolsDSc_Project/{output_folder}/keeper_season_stats_{season}.csv'
+            keeper_file_name = f'{output_folder}/keeper_season_stats_{season}.csv'
             # Check if file exists and warn
             if os.path.exists(keeper_file_name):
                 print(f"Warning: File {keeper_file_name} already exists and will be overwritten.")
